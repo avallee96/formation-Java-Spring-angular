@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p th:if="${name != 'samsung'}">Hello World <span th:text="${name}"></span> !</p>
+	<p th:unless="${name != 'samsung'}">salut !</p>
+	
+	<div th:each="prenom : ${nomList}">
+		<p th:text="'Le prénom : ' + ${prenom}"></p>
+	</div>
+</body>
+</html>

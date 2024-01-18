@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>affichage du produit</title>
+</head>
+<body>
+	<p th:if="${name != null}">nom du produit : <span th:text="${name}"></span> !</p>
+	<p th:unless="${name != null}">le produit n'excite pas</p>
+
+</body>
+</html>
